@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/deng%20lu%20jie%20mian.png);
+  background-position: -38px -29px;
+  background-size: 105%;
+}
+.bg .sp {
+  width: 450px;
+  height: 300px;
+  background: #E5E5E5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -225px;
+  margin-top: -150px;
+}
+.bg .sp h2 {
+  width: 220px;
+  font-family: SimHei;
+  font-weight: 900;
+  margin: 20px 50px;
+  box-shadow: 0 0.5px gray;
+}
+.bg .hv {
+  color: gray;
+  float: right;
+  margin-right: 80px;
+}
+.bg .hv:hover {
+  color: black !important;
+}
