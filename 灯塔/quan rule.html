@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset200802.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-1">
+                <h3>灯塔</h3>
+                <ul>
+                   <a href="rule%20quan%20manager.html"> <li>积分管理</li></a>
+                    <li class="col">积分规则</li>
+
+                </ul>
+            </div>
+            <div class="nav-2">
+                <p>消息<span class="layui-icon">&#xe623;</span></p>
+                <div class="">
+                    <img src="img/cao%20zuo%20tu%20biao.png">
+                    name
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="layui-row ">
+        <aside class=" layui-nav layui-nav-tree  bg-color dian inb">
+            <ul class="layui-nav-item layui-col-xs12 ovf">
+                <a href="index.html">
+                    <li>
+                        <span class="layui-icon">&#xe612;</span><span>主页</span>
+                    </li>
+                </a>
+                <a href="manager.html">
+                    <li ><span class="layui-icon">&#xe60f;</span><span href=""> 文章</span></li>
+                </a>
+                <a href="quan%20rule.html">
+                    <li class="active"><span class="layui-icon">&#xe617;</span><span>灯塔圈</span></li>
+                </a>
+                <a href="jichu.html.html">
+                    <li><span class="layui-icon">&#xe614;</span><span>基础功能</span></li>
+                </a>
+            </ul>
+        </aside>
+        <div class="right-buff">
+            <div class=" right head">
+                <span>规则说明 <i class="layui-icon">&#xe623;</i></span>
+
+            </div>
+            <div class=" right article">
+                <div class="title">
+                    <h2> <b> 发布</b></h2>
+                </div>
+
+                <span>积分规则:</span>
+                <ol>
+                    <li>成功发布类型1)的灯塔圈 <font>增加</font> 相应分值</li>
+                    <li>成功发布类型2）的灯塔圈 <font>不增加</font>分值 </li>
+                    <li>当成功发布的灯塔圈由类型1)转换成类型2)时,扣除之前增加的相应分值</li>
+                    <li>当成功发布的灯塔圈由类型2)转换成类型1)时，<font>增加</font> 相应的分值</li>
+                    <li>删除发布成功的灯塔圈后,应 <font>扣除</font>相应分数</li>
+                </ol>
+
+            </div>
+            <div class=" right article">
+                <div class="title">
+                    <h2> <b> 收藏</b></h2>
+                </div>
+
+                <span>积分规则:</span>
+                <ol>
+                    <li>自己收藏自己发布的灯塔圈，只算主动收藏积分</li>
+                    <li>取消收藏后应 <font>扣除</font>相应分值 </li>
+
+                </ol>
+
+
+            </div>
+            <div class=" right article">
+                <div class="title">
+                    <h2> <b> 分享</b></h2>
+                </div>
+
+                <span>积分规则:</span>
+                <ol>
+                    <li>自己分享自己发布的灯塔圈，只算主动收藏积分</li>
+                    <li>灯塔圈被连续分享多次，其被分享积分均<font>增加</font>在原创作者上(<font>例，乙分享甲原创的灯塔圈M，丙又继续分享乙分享的M，此时产生的被分享积分增加到甲上</font>)
+                    </li>
+                    <li>取消分享后的后，应 <font>扣除</font>相应分值<br>(包括主动分享积分和被分享积分)</br> </li>
+
+                </ol>
+
+
+            </div>
+            <div class=" right article">
+                <div class="title">
+                    <h2> <b> 评论</b></h2>
+                </div>
+
+                <span>积分规则:</span>
+                <ol>
+                    <li>自己评论自己发布的灯塔圈，只算主动评论积分</li>
+                    <li>对于评论的评论，其被评论积分均<font>增加</font>在灯塔圈的原创作者上(<font>例，甲原创的灯塔圈M，乙评论为A,丙评论A为B，则此时产生的评论积分增加到甲上</font>)
+                    </li>
+                    <li>删除评论后应 <font>扣除</font>相应分值<br>(包括主动评论积分和被动评论积分)</br> </li>
+
+                </ol>
+
+
+            </div>
+            <div class=" right article">
+                <div class="title">
+                    <h2> <b> 点赞</b></h2>
+                </div>
+
+                <span>积分规则:</span>
+                <ol>
+                    <li>自己点赞自己发布的灯塔圈，只算主动点赞积分</li>
+                    <li>取消点赞后应 <font>扣除</font>相应分值<br>(包括主动评论积分和被动评论积分)</br> </li>
+
+                </ol>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="layui/layui.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

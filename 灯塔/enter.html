@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/layui.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <link rel="icon" href="img/deng%20lu%20jie%20mian.png">
+
+</head>
+
+<body>
+    <section class="bg">
+        <div class="sp">
+            <h2>灯塔APP后台管理系统</h2>
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="identity" lay-verify="pass" placeholder="请输账户" autocomplete="off"
+                        class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux ronga">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">身份证</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="identity" lay-verify="identity" placeholder="请输入身份证号" autocomplete="off"
+                        class="layui-input">
+
+                </div>
+                <div class="layui-form-mid layui-word-aux rongb"></div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密 &nbsp;&nbsp;&nbsp;码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" lay-verify="pass" placeholder="请输入密码" autocomplete="off"
+                        class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux rongc"></div>
+                <a class="hv" target="view_window"
+                    href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=3.0&old_ver_account=1519686881">
+                    <<找回密码>>
+                </a>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block" style="margin-left:95px;margin-top: -5px;position: absolute;">
+
+                    <a href="index.html" class="tiao"></a><button class="layui-btn bt1" lay-submit=""
+                        lay-filter="demo1 " style="padding:0 40px;background: #5C9d99">登录</button></a>
+
+                    <button type="reset" class="layui-btn " style="padding:0 40px;background: #5C9d99">取消</button>
+                </div>
+            </div>
+
+    </section>
+</body>
+
+<!-- <script src="js/layui.all.js"></script> -->
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(".sp input:eq(0)").blur(function () {
+        va = $(this).val()
+        var Yang = new RegExp(/^[A-Za-z0-9]{6,14}$/);
+        if (!Yang.test(va)) {
+            $(".ronga").text("输入错误");
+        }
+        else {
+            $(".ronga").text("输入正确")
+        }
+
+        $(".sp input:eq(1)").blur(function () {
+            vo = $(this).val()
+            var Yong = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+            if (!Yong.test(vo)) {
+                $(".rongb").text("输入错误");
+                // console.log($(".rongb"))
+            }
+            else {
+                $(".rongb").text("输入正确")
+            }
+
+            $(".sp input:eq(2)").blur(function () {
+                ve = $(this).val()
+                var Yeng = new RegExp(/^[A-Za-z0-9]{6,12}$/);
+                if (!Yeng.test(ve)) {
+                    $(".rongc").text("输入错误");
+                }
+                else {
+                    $(".rongc").text("输入正确")
+                }
+                if (Yang.test(ve)) {
+                    if (Yong.test(vo)) {
+                        if (Yeng.test(ve)) {
+                            $(".bt1").click(function () {
+                                $(".bt1").appendTo(".tiao")
+                                console.log(1)
+                            })
+                        }
+                    }
+                }
+            })
+        })
+    })
+
+
+
+
+</script>
+
+</html>

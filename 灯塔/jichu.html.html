@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="css/reset200802.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/jichu.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/msg.css">
+    <script src="js/layui.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <header>
+        <div class="nav">
+            <div class="nav-1">
+                <h3>灯塔</h3>
+                <ul>
+                    <li class="col">积分规则管理</li>
+
+                </ul>
+            </div>
+            <div class="nav-2">
+                <p>消息</p>
+                <div class="">
+                    <img src="img/tou%20xiang.png">
+                    <span>天佑</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 弹框 -->
+    <section class="supernatant">
+        <div class="supt">
+            <table class=" ipt">
+                <dl style="text-align: center;line-height: 50px">修改内容</dl>
+                <tr>
+                    <td>类型</td>
+                    <td>积分周期</td>
+                    <td>周期内积分次数上限（次）</td>
+                    <td>积分分值（分）</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><span class="bao">保存</span></td>
+                </tr>
+
+            </table>
+        </div>
+<!-- 左侧边栏 -->
+    </section>
+    <div class="layui-row ">
+        <div class=" layui-nav layui-nav-tree  bg-color dian inb">
+            <ul class="layui-nav-item layui-col-xs12 ovf">
+            <a href="index.html">
+                <li>
+                    <span class="layui-icon">&#xe612;</span><span>主页</span>
+                </li>
+            </a>
+                <a href="manager.html">
+                    <li><span class="layui-icon">&#xe60f;</span><span href=""> 文章</span></li>
+                </a>
+                <a href="quan%20rule.html">
+                    <li><span class="layui-icon">&#xe617;</span><span>灯塔圈</span></li>
+                </a>
+                <a href="jichu.html.html">
+                    <li class="active"><span class="layui-icon">&#xe614;</span><span>基础功能</span></li>
+                </a>
+            </ul>
+        </div>
+<!-- 详情 -->
+        <div class="layui-col-md10 right head">
+            <span>操作说明</span>
+            <div class="triangle "></div>
+
+        </div>
+        <div class="layui-col-md10 right article tb ">
+            <h2> <b> 每日APP登陆</b></h2>
+            <table class="td-sy">
+                <tr>
+                    <td>类型</td>
+                    <td>积分周期</td>
+                    <td>周期内积分次数上限（次）</td>
+                    <td>积分分值（分）</td>
+                    <td>操作</td>
+                </tr>
+                <tr class="val">
+                    <td>无</td>
+                    <td>每天</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="bt"></span></td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="layui-col-md10 right article tb ">
+            <h2> <b> 设置头像</b></h2>
+            <table class="td-sy">
+                <tr>
+                    <td>类型</td>
+                    <td>积分周期</td>
+                    <td>周期内积分次数上限（次）</td>
+                    <td>积分分值（分）</td>
+                    <td>操作</td>
+                </tr>
+                <tr class="val">
+                    <td>无</td>
+                    <td>仅一次</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="bt"></span></td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="layui-col-md10 right article tb mar">
+            <h2> <b> 设置简介</b></h2>
+            <table class="td-sy">
+                <tr>
+                    <td>类型</td>
+                    <td>积分周期</td>
+                    <td>周期内积分次数上限（次）</td>
+                    <td>积分分值（分）</td>
+                    <td>操作</td>
+                </tr>
+                <tr class="val">
+                    <td>无</td>
+                    <td>仅一次</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td><span class="bt"></span></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    <body>
+
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    var arr = []
+    var add = []
+    $(".bt").click(function () {
+
+        $(".supernatant").toggle()
+        $(this).parent().siblings("td").text(function (index, currentText) {
+            // $(".val td:lt(4)")
+            return arr[index] = currentText
+        })
+        console.log(arr)
+        $(".ipt tr input").val(function (ind, cyx) {
+            return cyx = arr[ind]
+        })
+        that=this
+        $(".bao").click(function () {
+            $(".supernatant").hide()
+            $(".ipt tr input").val(function (ind, cyx) {
+                return add[ind] = cyx
+            })
+            
+            $(that).parent().siblings("td").text(function (index, currentText) {
+                return currentText = add[index]
+
+            })
+        })
+    })
+
+</script>

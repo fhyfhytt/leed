@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-1 h3 {
+    float: left;
+    padding: 20px 113px 20px 30px;
+    font-weight: bold;
+}
+
+.nav-1 ul,
+.nav-1 li {
+    float: left;
+}
+
+.nav-1 li {
+    padding: 20px 70px;
+}
+
+.col {
+    background: #5c9d99;
+    color: white;
+}
+
+.nav-2 {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    position: relative;
+    left: -30px;
+}
+
+.nav-2 p {
+    padding: 0 10px;
+    background: url(../img/xiao%20jian%20tou.png) no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+
+.nav-2 div {
+    cursor: pointer;
+}
+
+.nav2 {
+    margin-top: 20px;
+    width: 175px;
+    background: #ffffff;
+}
+
+.nav2 li {
+    padding: 20px 70px 20px 30px;
+}
+
+.ovf a {
+    overflow: visible !important;
+}
